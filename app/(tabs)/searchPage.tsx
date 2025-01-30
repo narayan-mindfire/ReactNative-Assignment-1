@@ -1,10 +1,10 @@
+import SearchBar from "@/components/SearchBar"
 import { Text, View, StyleSheet, TouchableOpacity, Image, TextInput } from "react-native"
 
 export default function SearchPage(){
 
     return(
         <View style = {styles.container}>
-            <View style = {styles.top}>
                 <TouchableOpacity>
                     <View style={styles.bbtn}>
                         <Image 
@@ -12,12 +12,6 @@ export default function SearchPage(){
                         />
                     </View>
                 </TouchableOpacity>
-                <TextInput
-                    style = {styles.inp}
-                    clearButtonMode="always"
-                    placeholder="Search"
-                />
-            </View>
             <Text style = {styles.heading}>Shop by Categories</Text>
             <View style = {styles.catBox}>
                 <View style = {styles.catCard}>
@@ -69,28 +63,14 @@ const styles = StyleSheet.create({
     container : {
         paddingHorizontal : 24,
     },
-    top : {
-        display : 'flex',
-        flexDirection : 'row',
-        alignItems : 'center',
-        justifyContent : 'center',
-        marginTop : 66,
-        gap : 9,
-    },
     bbtn: {
+        marginTop : 66,
         backgroundColor: '#F4F4F4',
         width: 40,
         height: 40,
         borderRadius: 30,
         alignItems : 'center',
         justifyContent : 'center',
-    },
-    inp : {
-        padding : 10,
-        backgroundColor : '#F4F4F4',
-        width : 293,
-        height : 40,
-        borderRadius : 100,
     },
     heading : {
         fontWeight : '700',
