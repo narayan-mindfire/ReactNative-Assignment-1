@@ -6,7 +6,7 @@ export default function ProductPage() {
     return (
         <SafeAreaView style = {styles.sv}>
             <View style={styles.container}>
-                <TouchableOpacity style={{ marginTop: 33 }}>
+                <TouchableOpacity style={{ marginTop : 33 }}>
                     <View style={styles.bbtn}>
                         <Image 
                             source={require('@/assets/icons/arrowleft2.png')}
